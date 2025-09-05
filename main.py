@@ -16,8 +16,8 @@ from trulens.providers.litellm import LiteLLM
 OLLAMA_GENERATE_URL = "http://localhost:11434/api/generate"
 OLLAMA_EMBED_URL = "http://localhost:11434/api/embed"
 
-CHROMA_API_KEY = "ck-9CR4jX6ftrkLszSRn2RbZkU5DZav2jfNAJTGreUtVWMG"
-CHROMA_TENANT = "743a9b57-4f1c-4b0c-ada4-bb42cd33fd01"
+CHROMA_API_KEY = "ck-"
+CHROMA_TENANT = ""
 CHROMA_DATABASE = "demo1"
 
 chroma_client = chromadb.CloudClient(
@@ -104,3 +104,4 @@ if __name__ == "__main__":
     # ---------------- Run TruLens Dashboard ----------------
     from trulens.dashboard import run_dashboard
     run_dashboard(session)  # 👉 open http://localhost:8501 in browser
+
